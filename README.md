@@ -102,7 +102,7 @@ version in the Apicurio registry.
 Point a web browser to Apicurio, typically `localhost:8080`. 
 Select "Upload artifact". Fill in the "name" field as "Bear", but
 leave the group name blank. Use the "Browse" button to location the file
-`bear.schema`. See the screenshot in Apicurio_upload.png.
+`bear.schema`. See the screenshot in apicurio_upload.png.
 
 *Note* running in "dev" mode provides no persistent storage. If you
 restart Apicurio, you'll need to upload the schema again.
@@ -161,7 +161,7 @@ before running `mvn`. See the script `clean.sh`.
 
 Apicurio needs Java 11 or later. If you have multiple Java versions
 installed, you'll need to specify the relevant `$PATH`. Setting
-`JAVA\_HOME` isn't sufficient on its own. For example:
+`JAVA_HOME` isn't sufficient on its own. For example:
 
     $ PATH=/usr/jdk-15/bin/:$PATH JAVA_HOME=/usr/jdk-15/ ./mvnw quarkus:dev
 
