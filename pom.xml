@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.kevinboone.apacheintegration</groupId>
+    <artifactId>avrotest</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <properties>
+      <qpid.version>0.40.0</qpid.version>
+      <apicurio.version>1.3.2.Final</apicurio.version>
+      <apicurio.url>http://localhost:8080/api</apicurio.url>
+    </properties>
+
+    <dependencies>
+      <dependency>
+       <groupId>org.apache.avro</groupId>
+        <artifactId>avro</artifactId>
+       <version>1.10.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-jms-client</artifactId>
+        <version>${qpid.version}</version>
+       </dependency>
+      <dependency>
+        <groupId>io.apicurio</groupId>
+        <artifactId>apicurio-registry-search-client</artifactId>
+        <version>${apicurio.version}</version>
+       </dependency>
+    </dependencies>  
+
+    <!-- sub modules -->
+    <modules>
+        <module>sender</module>
+        <module>receiver</module>
+    </modules>
+    
+</project>

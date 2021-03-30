@@ -1,0 +1,6 @@
+# Properties for connecting to the message broker
+broker_uri=amqp://localhost:61616
+broker_user=admin
+broker_password=admin
+broker_queue=avrotest
+

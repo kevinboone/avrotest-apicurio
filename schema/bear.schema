@@ -1,0 +1,10 @@
+{
+"namespace": "net.kevinboone.apacheintegration.avrotest",
+ "type": "record",
+ "name": "Bear",
+ "fields": 
+    [
+    {"name": "name", "type": "string"},
+    {"name": "location", "type": ["string", "null"]}
+   ]
+}
